@@ -1,5 +1,5 @@
 
-Fast QTL
+Fast QTL
   * Authors : Olivier DELANEAU, Halit ONGEN, Alfonso BUIL & Manolis DERMITZAKIS
   * Contact : olivier.delaneau@gmail.com
   * Webpage : http://fastqtl.sourceforge.net/
