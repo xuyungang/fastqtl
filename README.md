@@ -22,6 +22,9 @@ run_FastQTL_threaded.py ${genotypes}.vcf.gz ${phenotypes}.bed.gz ${prefix} --cov
 These minor allele filters result in inclusion of genotypes with minor allele frequency ≥ 0.01 and with at least 10 samples containing the minor allele.
 
 ## Output format (header of the columns)
+Check [here](Options_list.txt) for full options.
+
+## Output format (header of the columns)
 Nominal pass:
 ```
 'phynotype_id', 'variant_id', 'geno_phyno_distance', 'ma_samples', 'ma_count', 'maf', 'pval_nominal', 'slope', 'slope_se'
