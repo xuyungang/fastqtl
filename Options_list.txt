@@ -1,0 +1,60 @@
+
+Fast QTL
+  * Authors : Olivier DELANEAU, Halit ONGEN, Alfonso BUIL & Manolis DERMITZAKIS
+  * Contact : olivier.delaneau@gmail.com
+  * Webpage : http://fastqtl.sourceforge.net/
+  * Version : v2.184_gtex
+
+Basic options:
+  --help                   Produces this help
+  --silent                 Silent mode on terminal
+  --seed arg (=1592842362) Random number seed. Useful to replicate runs.
+
+Input/Output files:
+  -L [ --log ] arg (=fastQTL_date_time_UUID.log)
+                                        Screen output is copied in this file.
+  -V [ --vcf ] arg                      Genotypes in VCF format.
+  -B [ --bed ] arg                      Phenotypes in BED format.
+  -C [ --cov ] arg                      Covariates in TXT format.
+  -G [ --grp ] arg                      Phenotype groups in TXT format.
+  -O [ --out ] arg                      Output file.
+
+Exclusion/Inclusion files:
+  --exclude-samples arg    List of samples to exclude.
+  --include-samples arg    List of samples to include.
+  --exclude-sites arg      List of sites to exclude.
+  --include-sites arg      List of sites to include.
+  --exclude-phenotypes arg List of phenotypes to exclude.
+  --include-phenotypes arg List of phenotypes to include.
+  --exclude-covariates arg List of covariates to exclude.
+  --include-covariates arg List of covariates to include.
+
+Parameters:
+  --normal                             Normal transform the phenotypes.
+  -W [ --window ] arg (=1000000)       Cis-window size.
+  -T [ --threshold ] arg (=1)          P-value threshold used in nominal pass 
+                                       of association
+  --maf-threshold arg (=0)             Minor allele frequency threshold used 
+                                       when parsing genotypes
+  --ma-sample-threshold arg (=0)       Minimum number of samples carrying the 
+                                       minor allele; used when parsing 
+                                       genotypes
+  --global-af-threshold arg (=0)       AF threshold for all samples in VCF 
+                                       (used to filter AF in INFO field)
+  --interaction-maf-threshold arg (=0) MAF threshold for interactions, applied 
+                                       to lower and upper half of samples
+
+Modes:
+  -P [ --permute ] arg  Permutation pass to calculate corrected p-values for 
+                        molecular phenotypes.
+  --psequence arg       Permutation sequence.
+  --map arg             Map best QTL candidates per molecular phenotype.
+  --map-full            Scan full cis-window to discover independent signals.
+  --interaction arg     Test for interactions with variable specified in file.
+  --report-best-only    Report best variant only (nominal mode)
+
+Parallelization:
+  -K [ --chunk ] arg    Specify which chunk needs to be processed
+  --commands arg        Generates all commands
+  -R [ --region ] arg   Region of interest.
+
